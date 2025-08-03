@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- Custom Title Bar -->
+
     <LinearLayout
         android:id="@+id/customTitleBar"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
             android:layout_marginStart="16dp" />
     </LinearLayout>
 
-    <!-- Content Scroll -->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:padding="24dp">
 
-            <!-- Drill content -->
+
             <TextView
                 android:id="@+id/drillTitle"
                 android:layout_width="wrap_content"
@@ -86,7 +86,7 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp" />
 
-            <!-- Separate Tip TextViews -->
+
             <TextView
                 android:id="@+id/tip1TextView"
                 android:layout_width="wrap_content"

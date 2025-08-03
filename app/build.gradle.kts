@@ -46,9 +46,6 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.assets)
-//   implementation(libs.sceneform.ux)
-//    implementation(libs.sceneform.core)
-//    implementation(libs.ar.core)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -63,10 +60,5 @@ dependencies {
     implementation ("com.airbnb.android:lottie:6.6.6")
 
 
-
-
-
-//
-//   implementation("com.gorisse.thomas.sceneform:sceneform:1.22.0")
 
 }

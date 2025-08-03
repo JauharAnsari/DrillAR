@@ -39,15 +39,9 @@ class MainActivity : AppCompatActivity() {
             ) {
                 val selectedDrill = drillList[position]
 
-
-
                 if (position == 0) return
-
-
                 val intent = Intent(this@MainActivity, DrillDetailActivity::class.java)
                 intent.putExtra("drill_name", selectedDrill)
-
-
 
                 when (selectedDrill) {
                     "Drill 1" -> {
@@ -74,8 +68,6 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 startActivity(intent)
-
-                // Reset spinner to default
                 spinnerDrills.setSelection(0)
             }
 

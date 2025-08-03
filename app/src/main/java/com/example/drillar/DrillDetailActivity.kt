@@ -40,16 +40,6 @@ class DrillDetailActivity : AppCompatActivity() {
         binding.tip2TextView.text=tip2
         binding.tip3TextView.text=tip3
 
-//        if (position == "Drill 1") {
-//            binding.drillImage.setImageResource(R.drawable.drill_one)
-//            binding.drillImage.cropToPadding
-//        } else if (position == "Drill 2") {
-//            binding.drillImage.setImageResource(R.drawable.drill_two)
-//
-//        }
-//        else if (position == "Drill 3") {
-//            binding.drillImage.setImageResource(R.drawable.drill_three)
-//        }
         binding.backButton.setOnClickListener {
             finish()
         }
