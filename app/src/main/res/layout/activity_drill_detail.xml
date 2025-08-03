@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Custom Title Bar -->
+    <LinearLayout
+        android:id="@+id/customTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/background"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drill Detail"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Content Scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- Drill content -->
+            <TextView
+                android:id="@+id/drillTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drill 1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/drillImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/drillDescriptionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/drillDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is a dummy description for Drill 1."
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/drillTipsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tips:"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Separate Tip TextViews -->
+            <TextView
+                android:id="@+id/tip1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Tip 1"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tip2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Tip 2"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tip3TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Tip 3"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/startDrillButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Start AR Drill"
+                android:backgroundTint="@color/cardview_dark_background" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

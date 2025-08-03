@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DrillAR</string>
+
+    <string-array name="drill_list">
+        <item>Drill 1</item>
+        <item>Drill 2</item>
+        <item>Drill 3</item>
+    </string-array>
+</resources>
